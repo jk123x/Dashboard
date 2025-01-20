@@ -91,14 +91,14 @@ body {
     grid-row: 10 / 11;
 }
 
-img {
-    padding-right: 10px;
-}
-
 img.logo {
     width: 30px;
     height: 30px;
     font-weight: 900;
+}
+
+.tdl1 {
+    margin-left: 250px;
 }
 
 .header {
@@ -172,7 +172,6 @@ img.logo {
 
 .neck {
     display: grid;
-    background-color: white;
     grid-area: 1 / 1 / 2 / 3;
     font-weight: 100;
     align-items: end;
@@ -187,6 +186,7 @@ img.logo {
     grid-area: 2 / 1 / 5 / 3;
     background-color: #e2e6ff;
     color: black;;
+    padding-bottom: 3vh;
 }
 
 .p1, .p2, .p3, .p4, .p5, .p6 {
@@ -200,6 +200,7 @@ img.logo {
     padding-top: 2vh;
     line-height: 1.2;
     font-weight: 300;
+   
 }
 
 .descriptor {
@@ -212,43 +213,124 @@ p {
 }
 
 .p2 {
-    display: grid;
     grid-area: 1 / 2 / 2 / 3;
 }
-
-
 
 .rightside {
     display: grid;
     grid-row: 1 / 5;
-    background-color: purple;
-}
-
-.announcements {
+    background-color: #e2e6ff;
     display: grid;
+    grid-template-rows: 49px 0.62fr 0.62fr 0.62fr 47px 0.3fr 0.3fr 0.3fr 0.3fr;
 }
 
 .necktie {
     display: grid;
-    grid-area: 1 / 1 / 2 / 2;
+    grid-row: 1 / 2;
+    font-weight: 100;
+    align-items: end;
+    padding-bottom: 1vh;
+    padding-left: 0.5vw;
+}
+
+.announcements {
+    display: grid;
+    grid-row: 2 / 5;
+    border: 2px dotted white;
+    border-radius: 2%;
+    margin-right: 2vw;
+    padding-left: 2vw;
 }
 
 .a1 {
     display: grid;
-    grid-area: 2 / 1 / 3 / 2;
+    grid-row: 2 / 3;
+    align-self: start;
+}
+
+.midlevel {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.lorem {
+    font-weight: 200;
+    font-size: 0.5rem;
 }
 
 .a2 {
     display: grid;
-    grid-area: 3 / 1 / 4 / 2;
+    grid-row: 3 / 4;
 }
 
 .a3 {
     display: grid;
-    grid-area: 4 / 1 / 5 / 2;
+    grid-row: 4 / 5;
+}
+
+.necktrend {
+    display: grid;
+    grid-row: 5 / 6;
+    font-weight: 100;
+    align-items: end;
+    padding-bottom: 1vh;
+    padding-left: 0.5vw;
 }
 
 .trending {
     display: grid;
-    
+    grid-row: 6 / 10;
+    border: 2px dotted white;
+    border-radius: 2%;
+    margin-right: 2vw;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 5vh;
+}
+
+.trend1 {
+    display: grid;
+    grid-row: 6 / 7;
+}
+
+.trend2 {
+    display: grid;
+    grid-row: 7 / 8;
+}
+
+.trend3 {
+    display: grid;
+    grid-row: 8 / 9;
+}
+
+.trend4 {
+    display: grid;
+    grid-row: 9 / 10;
+}
+
+.follower {
+    grid-column: 2 / 3;
+    padding-top: 0.8vh;
+}
+
+#follower1 {
+    grid-row: 6 / 7;
+}
+
+#follower2 {
+    grid-row: 7 / 8;
+}
+
+#follower3 {
+    grid-row: 8 / 9;
+}
+
+#follower4 {
+    grid-row: 9 / 10;
+}
+
+#followme {
+    display: grid;
+    align-self: start;
+    height: 5vh;
+    padding-left: 1vw;
 }
